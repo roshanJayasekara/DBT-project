@@ -15,7 +15,7 @@ model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
-macro-paths: ["macros"]
+macro-paths: ["macros", "dbt_packages/dbt_utils/macros"]
 snapshot-paths: ["snapshots"]
 
 clean-targets:         # directories to be removed by `dbt clean`
@@ -45,4 +45,5 @@ models:
 seeds:
   dbt_project:
     +schema: source
+
 
